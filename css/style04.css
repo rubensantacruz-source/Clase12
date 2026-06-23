@@ -1,0 +1,13 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial, sans-serif;background:#f7fafc;padding:0}
+
+.green-box{ width:520px; max-width:calc(100% - 40px); margin:36px auto 0; background:#2f8f4a; border-radius:0; padding:18px 24px; box-shadow:none; }
+.green-box ul{ list-style:none; display:flex; gap:28px; padding:0; margin:0; align-items:center; justify-content:center; flex-wrap:wrap; }
+.green-box li{ font-size:18px; margin:0; }
+.green-box .item-link{ color:#ffffff; text-decoration:none; display:block; padding:6px 0; border-radius:0; }
+.green-box .item-link:hover{ background:none; text-decoration:none; opacity:0.95; }
+.green-box .item-link:active{ opacity:0.9; }
+/* removed extra last-child margin to keep spacing consistent */
+
+/* page only contains the green box */
+html,body{height:100%}
