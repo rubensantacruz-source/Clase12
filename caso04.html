@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="css/style03.css">
 </head>
 <body>
-        <section class="panel">
+    <main>
+        <section class="panel" aria-labelledby="panel-title">
             <div class="panel-inner">
-                <div class="panel-header"><strong>Rendimiento mensual</strong></div>
-
+                <div class="panel-header"><strong id="panel-title">Rendimiento mensual</strong></div>
                 <div class="stat-box">
                     <div class="stat-inner">
                         <div class="stat-line"></div>
@@ -18,20 +18,20 @@
                         <div class="stat-sub">Nuevos usuarios activos</div>
                     </div>
                 </div>
-
                 <p class="live-note">Los datos se actualizan en tiempo real según interacciones del panel.</p>
-
-                <button class="sync-btn" id="syncBtn">Sincronizar panel</button>
+                <button type="button" class="sync-btn" id="syncBtn">Sincronizar panel</button>
             </div>
         </section>
+    </main>
 
-                <script>
-                    document.getElementById('syncBtn').addEventListener('click', function(){
-                        const btn = this;
-                        btn.classList.add('pressed');
-                        setTimeout(()=>btn.classList.remove('pressed'), 380);
-                    });
-                </script>
-
+    <script>
+        const syncButton = document.getElementById('syncBtn');
+        if (syncButton) {
+            syncButton.addEventListener('click', () => {
+                syncButton.classList.add('pressed');
+                window.setTimeout(() => syncButton.classList.remove('pressed'), 380);
+            });
+        }
+    </script>
 </body>
 </html>
