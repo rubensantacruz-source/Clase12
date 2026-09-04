@@ -1,22 +1,27 @@
 <!DOCTYPE html>
-<html lang="es_PE">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barra de navegacion</title>
+    <title>Barra de navegación</title>
     <link rel="stylesheet" href="css/style02.css">
 </head>
 <body>
-    <!--Estructura del menu de navegacion-->
+    <nav aria-label="Menú principal">
+        <ul>
+            <li><a href="index.html" class="boton">Inicio</a></li>
+            <li><a href="#nosotros" class="boton">Nosotros</a></li>
+            <li><a href="#servicios" class="boton">Servicios</a></li>
+            <li><a href="#recursos" class="boton">Recursos</a></li>
+            <li><a href="#contactanos" class="boton">Contáctanos</a></li>
+        </ul>
+    </nav>
 
-<nav>
-    <ul>
-        <li><a href="#" class="boton">Inicio</a></li>
-        <li><a href="#" class="boton">Nosotros</a></li>
-        <li><a href="#" class="boton">Servicios</a></li>
-        <li><a href="#" class="boton">Recursos</a></li>
-        <li><a href="#" class="boton">Contactanos</a></li>
-    </ul>
-  </nav>
+    <main>
+        <section id="nosotros" aria-label="Nosotros"></section>
+        <section id="servicios" aria-label="Servicios"></section>
+        <section id="recursos" aria-label="Recursos"></section>
+        <section id="contactanos" aria-label="Contáctanos"></section>
+    </main>
 </body>
 </html>
